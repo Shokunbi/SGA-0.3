@@ -1,0 +1,47 @@
+# SGA-0.3
+<!DOCTYPE html>
+<html>
+		<head>
+			<title>	Smart Agriculture</title>
+			<style>
+				body {
+					text-align: center;
+					background: url("https://i.imgur.com/79tiQe7.jpg");
+					background-size: cover;
+					background-position: center;
+					color:white;
+					font-family: helvetica;
+				}
+				p {
+					font-size: 22px
+					}
+				input[type="submit"]{
+						background: red;
+						color: white;
+				}			
+				input{
+					border: 0px;
+					padding: 6px;
+					font-size: 17px;
+				}	
+				h1 {
+					color: red;
+				}
+				img {
+					border-radius:15px, 50px;
+					padding: 20px;
+					padding-top: 15%;
+					width: 300px;
+					height: 250px;
+					margin-right: 10px;
+				}
+			</style>
+		</head>
+		<body>
+			<img src="https://i.imgur.com/RDGJK1D.jpg">
+			<h1> Smart Agriculture </h1>
+			<p> Meet the CEO <button><strong><em> SOKALE, OLASUNKANMI AL-HASSAN </em></strong></button>
+			<input type="email" placeholder="Your email">
+			<input type="submit">
+		</body>
+</html>
