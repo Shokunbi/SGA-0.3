@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slimmy's Blog</title>
+	<link rel="stylesheet" type="text/css" href="/normalize.css">
+	<style>
+		header {
+			text-align: center;
+			background:url("https://static.wixstatic.com/media/ea870d_e49787f2476544649547fb9cbfe0adba.jpg/v1/fill/w_979,h_357,al_c,q_80,usm_0.66_1.00_0.01/ea870d_e49787f2476544649547fb9cbfe0adba.webp");
+			background-size: cover;
+			color: red;
+		}
+		ul {
+			padding: 10px;
+			background: rgba(0,0,0,0.5);
+		}
+		img {
+			margin: 40px 0px 0px 0px;
+			border: 10px solid white;
+			border-radius: 15px 50px;
+			height:200px;
+			width: 250px;
+		}
+		h1 {
+			font-size:70px;
+		}
+		a {
+			color: yellow;
+		}
+		h2 {
+			font-size: 55px;
+			color: rgba(0,225, 0, 0.5);
+		}
+		p{
+			color: #f00;
+		}
+		body {
+			font-family: helvatica;
+			background: rgba(30, 47,60,0.2);
+		}
+		
+		li {
+			display: inline;
+			padding: 0px 10px 0px 10px;
+			}		
+		article {
+			max-width: 500px;
+			padding: 20px;
+			margin: 0 auto;
+		}
+		@media(max-width: 500px){
+			body {
+				background:red;
+							}
+			h1 {
+				font-size: 36px;
+			}
+			li {
+				display: block;
+				padding: 5px;
+			}
+		}
+
+	</style>
+	</head>
+<body>
+	<header>
+		<img src="https://i.imgur.com/b3oU3uh.jpg">
+		<h1>Women Blog</h1>
+		<ul>
+			<li><a href="https://www.linkedin.com/in/shokunbi-aminat-92a080129/">About the Publisher</a></li>
+			<li><a href="https://www.naija.ng/1089233-what-skill-acquisition.html#1089233">Skill Acquisition</a></li>
+			<li><a href="https://www.theodysseyonline.com/empowered-women-empower-women">Empowered Women</a></li>
+		</ul>
+	</header>
+	<article>
+		<h2> Women are Amazing Creatures</h2>
+		<p>
+			A woman is a female human being. The term woman is usually reserved for an adult, with the term girl being the usual term for a female child or adolescent. The term woman is also sometimes used to identify a female human, regardless of age, as in phrases such as "women's rights". Women with typical genetic development are usually capable of giving birth from puberty until menopause. With regard to gender, a woman may also be a person whose sex assignment does not align with their gender identity, or those who have sexual characteristics that do not fit typical notions of male or female.
+		</p>
+		<button>Like</button>
+	</article>
+	<article>
+		<h2> Biological Symbol</h2>
+		<p>
+			The symbol for the planet and goddess Venus or Aphrodite in Greek is the sign also used in biology for the female sex. It is a stylized representation of the goddess Venus's hand-mirror or an abstract symbol for the goddess: a circle with a small equilateral cross underneath. The Venus symbol also represented femininity, and in ancient alchemy stood for copper. Alchemists constructed the symbol from a circle (representing spirit) above an equilateral cross (representing matter).
+		</p>
+		<button>Like</button>
+	</article>
+	<article>
+		<h2> Biology and Sex</h2>
+		<p>
+			In terms of biology, the female sex organs are involved in the reproductive system, whereas the secondary sex characteristics are involved in nurturing children or, in some cultures, attracting a mate. The ovaries, in addition to their regulatory function producing hormones, produce female gametes called eggs which, when fertilized by male gametes (sperm), form new genetic individuals. The uterus is an organ with tissue to protect and nurture the developing fetus and muscle to expel it when giving birth. The vagina is used in copulation and birthing, although the term vagina is often colloquially and incorrectly used in the English language for the vulva or external female genitalia, which consists of (in addition to the vagina) the labia, the clitoris, and the female urethra. The breast evolved from the sweat gland to produce milk, a nutritious secretion that is the most distinctive characteristic of mammals, along with live birth. 
+		</p>
+		<button>Like</button>
+	</article>
+	<script>
+ 		 alert("Javascript works!")
+  		$("button").on("click", function() {
+ 		   alert("clicked!")
+		  });
+  	</script>
+</body>
+</html>
