@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<head>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Poller+One" rel="stylesheet">
+<style>
+.beep {
+     width: 5px;
+     height: 0;
+    border: 5px solid transparent;
+    border-top: 10px solid yellow;
+    border-bottom: 80px solid red;
+    position:relative;
+    left: 140px;
+      }
+     @keyframes blink {
+  50% {
+    background: radial-gradient(circle, red 15%, transparent 40%), #cc5;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    background: -webkit-radial-gradient(circle, red 15%, transparent 40%), #cc5;
+  }
+}
+@-moz-keyframes blink {
+  50% {
+    background: -moz-radial-gradient(circle, red 15%, transparent 40%), #cc5;
+  }
+}
+.laser {
+	animation: blink .5s infinite;
+  	-webkit-animation: blink .5s infinite;
+  	-moz-animation: blink .5s infinite;
+}
+  .brain {
+  	    background: radial-gradient(circle, red 15%, transparent 40%), yellow;
+     background: -webkit-radial-gradient(circle, red 15%, transparent 40%), yellow;
+      background:-moz-radial-gradient(circle, red 15%, transparent 40%), yellow;
+      background-size: 75px 150px;
+    height: 150px;
+  width: 150px;
+  border-bottom:40px double blue;
+  border-radius: 60px 60px 10px 10px;
+  position: relative;
+  left: 70px;
+  }
+  .torso {
+  height: 0;
+  width: 140px;
+  border-top: 300px solid rgba(225, 225, 0,1);
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+  border-radius: 20px 20px 100px 100px;
+    }
+  .foot {
+  height: 40px;
+  width: 40px;
+  background: red;
+  border-radius: 40px;
+  border: 15px solid cyan;
+  position:relative;
+  left:110px;
+  top:-10px;
+  z-index: -1;
+}
+  .robot {
+      		position: relative;
+      		left:200px;
+      		z-index: 1;
+      }
+      .left {
+font-family:'Poller One', verdana, arial, sans-serif;
+font-weight: bold;
+font-size: 250px;
+color: red;
+transform: rotate(200deg);
+-webkit-transform: rotate(200deg);
+-moz-transform: rotate(200deg);
+position: relative;
+left: -190px;
+top: -320px;
+z-index:-1;
+}
+.right {
+	font-family:'Poller One', verdana, arial, sans-serif;
+font-weight: bold;
+font-size: 250px;
+color: red;
+transform: scaleY(-1) rotate(20deg);
+-webkit-transform: scaleY(-1) rotate(20deg);
+-moz-transform: scaleY(-1) rotate(20deg);
+position: relative;
+right: -190px;
+top: -620px;
+z-index:-1;
+}
+@keyframes dance {
+  from {
+    left: 800px;
+  }
+}
+-@-webkit-keyframes dance {
+  from {
+    left: 800px;
+  }
+}
+-@-moz-keyframes dance {
+  from {
+    left: 800px;
+  }
+}
+
+img {
+  position : absolute;
+  top: 200px;
+  left: 400px;
+  animation: dance 4s infinite;
+  -webkit-animation: dance 4s infinite;
+  -moz-animation: dance 4s infinite;
+}
+</style>
+</head>
+
+<body>
+<div class="robot">
+	<div class="laser"></div>
+	<div class="beep"></div>
+	<div class="brain"></div>
+	<div class="torso">
+		<div class="left">j</div>
+		<div class="right">j</div>
+	</div>
+	<div class="foot"></div>
+</div>
+<button class="flash"> laser eyes on/off</button>
+<button class="color"> change color!</button>
+<button class="moves"> break dance!</button>
+<img src="https://i.imgur.com/FfNxebt.gif">
+<script>
+	//on ever click on the button, put on/off the blink
+	$(".flash").click(function() {
+  $(".brain").toggleClass('laser');
+});
+	/*$(".color").click(function() {
+  var red = Math.floor(Math.random() * 255);
+  var green = Math.floor(Math.random() * 255);
+  var blue = Math.floor(Math.random() * 255);
+  // display the number in an alert window
+  alert(red + "," + green + "," + blue);
+});
+*/
+$(".color").click(function() {
+  // assign each named color a random number 0-255
+  var red = Math.floor(Math.random() * 255);
+  var green = Math.floor(Math.random() * 255);
+  var blue = Math.floor(Math.random() * 255);
+  // generate an RGBa value from red,green,blue
+  var randomRGBA = 'rgba('+red+','+green+','+blue+',1)';
+  //Display the three values in an alert window
+  //alert(randomRGBA);
+});
+$("body").css("background", (randomRGBA) {
+alert(randomRGBA);
+});
+$(".moves").click(function() {
+  $("img").toggle();
+});
+</script>
+</body>
